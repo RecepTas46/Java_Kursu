@@ -2,7 +2,7 @@ package Gun10;
 
 import java.util.Scanner;
 
-public class _4_basamakVeSayTers {
+public class _04_basamakVeSayTers {
     public static void main(String[] args) {
 
         // Girilen 3 basamaklı bir sayının basamaklarına göre tersini bir sayı olarak
@@ -34,6 +34,20 @@ public class _4_basamakVeSayTers {
 
         int tersii=birlerb*1000 +  onlarb*100+  yüzlerb*10+  binlerb;
         System.out.println("tersii = " + tersii);
+
+        //Girilen 5 basamakli bir sayinin tersini ekrana yazdiriniz?
+
+        System.out.println(" 5 basamakli sayi yaz=");
+
+        int besHaneliSayi=oku.nextInt();
+        int birlerB=besHaneliSayi%10;//5
+        int onlarB=(besHaneliSayi/10)%10;//4
+        int yüzlerB=(besHaneliSayi/100)%10;//3
+        int binlerB=(besHaneliSayi/1000)%10;
+        int onbinlerB=(besHaneliSayi/10000)%10;
+
+        int BesHanenintersi=birlerB*10000+onlarB*1000+yüzlerB*100+binlerB*10+onbinlerB;
+        System.out.println("BesHanenintersi = " + BesHanenintersi);
 
 
     }
