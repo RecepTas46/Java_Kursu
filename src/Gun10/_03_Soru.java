@@ -1,6 +1,6 @@
 package Gun10;
 
-public class _03_Soru {
+public class  _03_Soru {
     public static void main(String[] args) {
 
         // 2021 yılına kadar geçen gün sayısını bulunuz.

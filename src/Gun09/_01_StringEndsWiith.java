@@ -12,5 +12,6 @@ public class _01_StringEndsWiith {
         System.out.println("A ile bitiyor mu? = " + text.endsWith("A")); // false
         System.out.println("y ile bitiyor mu? = " + text.endsWith("y")); // false
         System.out.println("ba ile bitiyor mu? = " + text.endsWith("ba")); // false
+        System.out.println("Dünya ile bitiyormu="+text.endsWith("Dünya")); //true
     }
 }
