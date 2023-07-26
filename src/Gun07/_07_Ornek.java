@@ -12,7 +12,7 @@ public class _07_Ornek {
         double boy= oku.nextDouble();
         System.out.print("kilonuz=");
         double kilo= oku.nextByte();
-        System.out.println("boy="+boy +   "kilo="+kilo);
+        System.out.println("boy="+boy +  " "+ "kilo="+kilo);
 
 
 

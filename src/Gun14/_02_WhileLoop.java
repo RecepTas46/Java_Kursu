@@ -7,27 +7,24 @@ public class _02_WhileLoop {
 
         // girilen bir sayiya kadar olan sayilarin toplamini bularak yazdiniriniz
         //girilen sayi dahil
-        
-        Scanner oku=new Scanner(System.in);
-        
-        System.out.println(" sayi giriniz=");
-         int sayi=oku.nextInt();
-        int yedekSayi=sayi;
 
-         int toplam=0;
-         while (sayi>0)
-        {
-            toplam=toplam+sayi;
+        Scanner oku = new Scanner(System.in);
+        System.out.println(" sayi giriniz=");
+        int sayi = oku.nextInt();
+        int yedekSayi = sayi;
+
+        int toplam = 0;
+        while (sayi > 0) {
+            toplam = toplam + sayi;
             sayi--;
-           // toplam=toplam+sayi--;//yukardaki 2 satirin yerine bu daha guzel olur
+            // toplam=toplam+sayi--;//yukardaki 2 satirin yerine bu daha guzel olur
         }
         System.out.println("toplam = " + toplam);
-        
-        int sayac=0;
-        toplam=0;
-        while (sayac<=yedekSayi)
-        {
-            toplam=toplam+sayac;
+
+        int sayac = 0;
+        toplam = 0;
+        while (sayac <= yedekSayi) {
+            toplam = toplam + sayac;
             sayac++;
         }
         System.out.println("sayac = " + sayac);
@@ -64,6 +61,6 @@ public class _02_WhileLoop {
 
             System.out.println("toplam = " + toplam);*/
 
-        }
     }
+}
 

@@ -14,11 +14,15 @@ public class _06_Switch {
         int sayi1= oku.nextInt();
         System.out.println("2.sayiyi giriniz=");
         int sayi2= oku.nextInt();
-        System.out.println("toplama icin T\nCikarma icin C\nCarpma icin P\nBölme icin B\nGiriniz  ");
+        System.out.println("toplama icin T\nCikarma icin C\nCarpma icin P\nBölme icin B\nGiriniz:  ");
         Scanner oku2 =new Scanner(System.in);
         String islem=oku2.next();//string tipinde okudu
 
-        switch (islem)//buranin tipi neyse case dekilerde o olmali
+        //"T"-->T\n String de en az 2 karakter dir.
+        //ama int, double,char da birer karakter vardir.  String  kelime\n seklinde tutar
+
+        switch (islem.toUpperCase())//buranin tipi neyse case dekilerde o olmali
+                //toUpperCase yaptikki buyuk kucuk farketmeksizin kod calissin
         {
             case "T":
                 System.out.println(" toplam= " + (sayi1 + sayi2));
@@ -36,29 +40,30 @@ public class _06_Switch {
         }
 
         char islemChar=islem.charAt(0);
-            switch (islem)//buranin tipi neyse case dekilerde o olmali
+            switch (islemChar)//buranin tipi neyse case dekilerde o olmali
             {
-                case "T":
+                case 'T':
                     System.out.println(" toplam= " + (sayi1 + sayi2));
                     break;
-                case "C":
+                case 'C':
                     System.out.println(" cikarma= " + (sayi1 - sayi2));
                     break;
-                case "P":
+                case 'P':
                     System.out.println(" carpma= " + (sayi1 * sayi2));
                     break;
-                case "B":
+                case 'B':
                     System.out.println(" bolme= " + (sayi1 / sayi2));
                     break;
 
             }
 
-            switch (islem.toLowerCase())//buranin tipi neyse case dekilerde o olmali
+            switch (islem)//buranin tipi neyse case dekilerde o olmali
+                    //ekrana yazdirabilmek icin Toplam, Cikarma, Carpma, Bölme gibi yazilmali
         {
-            case "T": System.out.println(" toplam= " +(sayi1+sayi2) );break;
-            case "C": System.out.println(" cikarma= " +(sayi1-sayi2) );break;
-            case "P": System.out.println(" carpma= " +(sayi1*sayi2) );break;
-            case "B": System.out.println(" bolme= " +(sayi1/sayi2) );break;
+            case "Toplam": System.out.println(" toplam= " +(sayi1+sayi2) );break;
+            case "Cikarma": System.out.println(" cikarma= " +(sayi1-sayi2) );break;
+            case "Carpma": System.out.println(" carpma= " +(sayi1*sayi2) );break;
+            case "Bölme": System.out.println(" bolme= " +(sayi1/sayi2) );break;
 
 
 
